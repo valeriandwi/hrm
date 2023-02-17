@@ -19,18 +19,18 @@ module.exports = function override(config) {
   const alias = config.resolve.alias || {};
   Object.assign(alias, {
     '@': path.resolve(__dirname, './src/'),
-    '@Api': path.resolve(__dirname, './src/api/'),
-    '@Components': path.resolve(__dirname, './src/components/'),
-    '@Constants': path.resolve(__dirname, './src/constants/'),
-    '@Contexts': path.resolve(__dirname, './src/contexts/'),
-    '@Features': path.resolve(__dirname, './src/features/'),
-    '@Hooks': path.resolve(__dirname, './src/hooks/'),
-    '@Icons': path.resolve(__dirname, './src/icons/'),
-    '@Layouts': path.resolve(__dirname, './src/layouts/'),
-    '@Localization': path.resolve(__dirname, './src/localization/'),
-    '@Pages': path.resolve(__dirname, './src/pages/'),
-    '@Styles': path.resolve(__dirname, './src/styles/'),
-    '@Utils': path.resolve(__dirname, './src/utils/'),
+    '@api': path.resolve(__dirname, './src/api/'),
+    '@components': path.resolve(__dirname, './src/components/'),
+    '@constants': path.resolve(__dirname, './src/constants/'),
+    '@contexts': path.resolve(__dirname, './src/contexts/'),
+    '@features': path.resolve(__dirname, './src/features/'),
+    '@hooks': path.resolve(__dirname, './src/hooks/'),
+    '@icons': path.resolve(__dirname, './src/icons/'),
+    '@layouts': path.resolve(__dirname, './src/layouts/'),
+    '@localization': path.resolve(__dirname, './src/localization/'),
+    '@pages': path.resolve(__dirname, './src/pages/'),
+    '@styles': path.resolve(__dirname, './src/styles/'),
+    '@utils': path.resolve(__dirname, './src/utils/'),
   });
   config.resolve.alias = alias;
 
