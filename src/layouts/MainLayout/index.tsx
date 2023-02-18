@@ -27,4 +27,4 @@ const MainLayout : React.FC<MainLayoutProps> = ({ children }) => {
   )
 }
 
-export default MainLayout;
+export default React.memo(MainLayout);
