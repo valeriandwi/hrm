@@ -1,18 +1,20 @@
 import { Tabs, TabsProps } from 'antd'
 import React from 'react'
 import MainLayout from '../../layouts/MainLayout'
+import ActiveJobs from './active-jobs';
+import InactiveJobs from './inactive-jobs';
 
 const Jobs : React.FC = () => {
     const items: TabsProps['items'] = [
         {
           key: 'activeJobs',
           label: `ACTIVE JOBS`,
-          children: `Content of Tab Pane 1`,
+          children: <ActiveJobs/>
         },
         {
           key: 'inactiveJobs',
           label: `INACTIVE JOBS`,
-          children: `Content of Tab Pane 2`,
+          children: <InactiveJobs/>
         }
     ];
     
