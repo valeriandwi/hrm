@@ -9,11 +9,11 @@ const { Sider } = Layout;
 const SiderLayout : React.FC = () => {
   const { pathname } = useLocation();
 
-  const getSelectedMenu = () : (string | undefined)[] => {
-    if(pathname === "/") return ["dashboard"];
-    const path = pathname.replace("/","");
-    return [PUBLIC_ROUTES.filter(({key}) => key === path)[0]["key"]] || [];
-  }
+  // const getSelectedMenu = () : (string | undefined)[] => {
+  //   if(pathname === "/") return ["dashboard"];
+  //   const path = pathname.replace("/","");
+  //   return [PUBLIC_ROUTES.filter(({key}) => key === path)[0]["key"]] || [];
+  // }
 
   return (
     <div>
@@ -23,7 +23,7 @@ const SiderLayout : React.FC = () => {
         <div className="logo h-[50px]" />
         <Menu 
           theme="dark" 
-          selectedKeys={getSelectedMenu() as string[]}
+          // selectedKeys={getSelectedMenu() as string[]}
           mode="inline" 
           className='flex flex-col'
         >
