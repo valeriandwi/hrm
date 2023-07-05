@@ -2,7 +2,11 @@ import { Table } from "antd";
 import React from "react";
 import { COLUMNS } from "../constants";
 
-const TableCandidates: React.FC = () => {
+type TableCandidatesProps = {
+  toggleDrawer: () => void;
+};
+
+const TableCandidates: React.FC<TableCandidatesProps> = ({ toggleDrawer }) => {
   const dummyData = [
     {
       candidateName: "Valerian",
@@ -14,7 +18,7 @@ const TableCandidates: React.FC = () => {
       hiredBy: "HR",
     },
   ];
-  return <Table columns={COLUMNS} dataSource={dummyData} />;
+  return <Table columns={COLUMNS(toggleDrawer)} dataSource={dummyData} />;
 };
 
 export default TableCandidates;
