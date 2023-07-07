@@ -3,6 +3,7 @@ import React from "react";
 import StagesIndicator from "../../../components/StagesIndicator";
 import { LeftOutlined, MailOutlined, RightOutlined } from "@ant-design/icons";
 import DetailProfile from "./DetailProfile";
+import Resume from "./Resume";
 
 const CandidateProfile: React.FC = () => {
   const items: TabsProps["items"] = [
@@ -14,7 +15,7 @@ const CandidateProfile: React.FC = () => {
     {
       key: "2",
       label: `Resume`,
-      children: `Content of Tab Pane 2`,
+      children: <Resume />,
     },
     {
       key: "3",
