@@ -1,16 +1,13 @@
 import { Avatar, Typography } from "antd";
 import StagesIndicator from "../../components/StagesIndicator";
 
-export const COLUMNS = (onOpenDrawer: () => void) => [
+export const COLUMNS = [
   {
     title: "Candidate Name",
     dataIndex: "candidateName",
     key: "name",
     render: (value: string) => (
-      <div
-        className="flex flex-row items-center space-x-2"
-        onClick={onOpenDrawer}
-      >
+      <div className="flex flex-row items-center space-x-2">
         <Avatar src={`https://i.pravatar.cc/300?u=${value}abc`} />
         <Typography>{value}</Typography>
       </div>

@@ -18,7 +18,19 @@ const TableCandidates: React.FC<TableCandidatesProps> = ({ toggleDrawer }) => {
       hiredBy: "HR",
     },
   ];
-  return <Table columns={COLUMNS(toggleDrawer)} dataSource={dummyData} />;
+  return (
+    <Table
+      columns={COLUMNS}
+      dataSource={dummyData}
+      onRow={(record, rowIndex) => {
+        return {
+          onClick: (event) => {
+            toggleDrawer();
+          },
+        };
+      }}
+    />
+  );
 };
 
 export default TableCandidates;

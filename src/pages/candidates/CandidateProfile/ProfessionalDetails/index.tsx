@@ -6,7 +6,7 @@ const ProfessionalDetails: React.FC = () => {
   return (
     <Card bodyStyle={{ padding: 0 }}>
       <div className="flex justify-between p-4">
-        <Typography className="font-bold">Basic Information</Typography>
+        <Typography className="font-bold">Professional Details</Typography>
         <div className="cursor-pointer">
           <EditOutlined className="mr-2" />
           Edit Info
