@@ -5,6 +5,7 @@ import { LeftOutlined, MailOutlined, RightOutlined } from "@ant-design/icons";
 import DetailProfile from "./DetailProfile";
 import Resume from "./Resume";
 import HiringPipeline from "./HiringPipeline";
+import InterviewsInfo from "./InterviewsInfo";
 
 const CandidateProfile: React.FC = () => {
   const items: TabsProps["items"] = [
@@ -26,7 +27,7 @@ const CandidateProfile: React.FC = () => {
     {
       key: "4",
       label: `Interviews`,
-      children: `Content of Tab Pane 3`,
+      children: <InterviewsInfo />,
     },
   ];
 
