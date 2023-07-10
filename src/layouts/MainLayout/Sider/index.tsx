@@ -60,7 +60,11 @@ const SiderLayout: React.FC = () => {
           <Typography className="m-4 text-gray-400 font-bold">
             ORGANIZATION
           </Typography>
-          <Menu.Item className="!pr-0 !pl-4" key="employee">
+          <Menu.Item
+            className="!pr-0 !pl-4"
+            key="employee"
+            onClick={() => navigate("/employee")}
+          >
             <UserOutlined className="mr-4" /> Employee
           </Menu.Item>
           <Menu.Item className="!pr-0 !pl-4" key="report">

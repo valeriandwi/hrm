@@ -1,5 +1,6 @@
 import Candidates from "../pages/Candidates";
 import Dashboard from "../pages/Dashboard";
+import Employees from "../pages/Employees";
 import Jobs from "../pages/Jobs";
 import JobDetail from "../pages/Jobs/JobDetail";
 import { PathRouteProps } from "./interfaces";
@@ -24,5 +25,10 @@ export const PUBLIC_ROUTES: PathRouteProps[] = [
     key: "candidates",
     path: "candidates",
     element: <Candidates />,
+  },
+  {
+    key: "employee",
+    path: "employee",
+    element: <Employees />,
   },
 ];
