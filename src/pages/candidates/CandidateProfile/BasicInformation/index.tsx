@@ -1,16 +1,11 @@
-import { EditOutlined } from "@ant-design/icons";
 import { Card, Col, Divider, Row, Typography } from "antd";
 import React from "react";
 
 const BasicInformation: React.FC = () => {
   return (
     <Card bodyStyle={{ padding: 0 }}>
-      <div className="flex justify-between p-4">
+      <div className="pt-2 px-4">
         <Typography className="font-bold">Basic Information</Typography>
-        <div className="cursor-pointer">
-          <EditOutlined className="mr-2" />
-          Edit Info
-        </div>
       </div>
       <Divider className="!mt-2" />
       <div className="px-4 pb-4">

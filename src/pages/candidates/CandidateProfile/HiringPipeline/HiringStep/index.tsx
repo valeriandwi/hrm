@@ -1,4 +1,5 @@
-import { Card, Steps, Typography } from "antd";
+import { CloseOutlined, RightOutlined } from "@ant-design/icons";
+import { Button, Card, Steps, Typography } from "antd";
 import React from "react";
 
 type HiringStepProps = {
@@ -24,6 +25,15 @@ const HiringStep: React.FC<HiringStepProps> = ({ currentStep = 1 }) => {
         progressDot
         items={hiringProcess.map((process) => ({ title: process }))}
       />
+      <div className="flex justify-end mt-4">
+        <Button className="mr-2" type="primary" danger>
+          <CloseOutlined /> Decline
+        </Button>
+        <Button type="primary">
+          <RightOutlined />
+          Move to Next Step
+        </Button>
+      </div>
     </Card>
   );
 };
