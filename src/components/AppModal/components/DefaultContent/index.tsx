@@ -1,6 +1,6 @@
 import React from "react";
 import { TDialogFunc } from "../../hooks/useModal";
-import AppButton from "@/components/AppButton";
+import AppButton from "../../../AppButton";
 
 export type DefaultContentProps = {
   desc?: string | React.ReactNode;

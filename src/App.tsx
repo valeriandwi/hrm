@@ -1,6 +1,6 @@
-import { Route, Routes } from 'react-router-dom';
-import { PUBLIC_ROUTES } from './constants/routeList';
-import './styles/global.scss';
+import { Route, Routes } from "react-router-dom";
+import { PUBLIC_ROUTES } from "./constants/routeList";
+import "./styles/global.scss";
 
 function App() {
   return (

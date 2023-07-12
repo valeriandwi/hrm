@@ -1,7 +1,7 @@
 import { Modal, ModalFuncProps } from "antd";
 import React from "react";
 import DefaultContent from "../components/DefaultContent";
-import AppDialog, { AppDialogProps } from "@/components/AppDialog";
+import AppDialog, { AppDialogProps } from "../../AppDialog";
 
 export type TModalState = {
   isOpen: boolean;
