@@ -22,7 +22,8 @@ const HiringStep: React.FC<HiringStepProps> = ({ currentStep = 1 }) => {
       <Steps
         current={currentStep}
         status="error"
-        progressDot
+        labelPlacement="vertical"
+        direction="horizontal"
         items={hiringProcess.map((process) => ({ title: process }))}
       />
       <div className="flex justify-end mt-4">
