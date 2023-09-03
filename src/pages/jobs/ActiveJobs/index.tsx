@@ -5,7 +5,9 @@ import { Typography } from "antd";
 const ActiveJobs: React.FC = () => {
   return (
     <div>
-      <Typography className="text-2xl mb-6 mt-3">7 Active Jobs</Typography>
+      <Typography className="text-2xl mb-6 mt-3 font-bold">
+        7 Active Jobs
+      </Typography>
       <JobCard />
     </div>
   );

@@ -1,5 +1,5 @@
 import AppButton from "@/components/AppButton";
-import { Form, Input } from "antd";
+import { DatePicker, Form, Input } from "antd";
 import React from "react";
 
 const InterviewForm: React.FC = () => {
@@ -7,6 +7,9 @@ const InterviewForm: React.FC = () => {
     <Form layout="vertical">
       <Form.Item name="purpose" label="Purpose">
         <Input placeholder="Purpose" />
+      </Form.Item>
+      <Form.Item name="interviewTime" label="Interview Time">
+        <DatePicker.RangePicker showTime />
       </Form.Item>
       <Form.Item name="linkMeeting" label="Link Meeting">
         <Input placeholder="Link Meeting" />

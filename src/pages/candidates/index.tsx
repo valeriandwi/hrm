@@ -14,7 +14,7 @@ const Candidates: React.FC = () => {
   return (
     <MainLayout>
       <div className="flex justify-between mb-6">
-        <Typography className="text-2xl">1 Candidates</Typography>
+        <Typography className="text-2xl font-bold">1 Candidates</Typography>
         <div className="flex flex-row space-x-2 items-center">
           <Typography className="font-semibold">
             Filter by applied date :
