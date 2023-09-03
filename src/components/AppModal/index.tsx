@@ -40,7 +40,8 @@ const AppModal: React.FC<AppModalProps> & { useModal: typeof useModal } = ({
     });
 
     setChildComponents(components);
-  }, [children, childrenArray, modal]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [children]);
 
   const useCustomizedModalHeader = !defaultHeader && modal ? true : false;
 
