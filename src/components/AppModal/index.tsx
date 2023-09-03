@@ -40,7 +40,7 @@ const AppModal: React.FC<AppModalProps> & { useModal: typeof useModal } = ({
     });
 
     setChildComponents(components);
-  }, [children]);
+  }, [children, childrenArray, modal]);
 
   const useCustomizedModalHeader = !defaultHeader && modal ? true : false;
 

@@ -39,7 +39,7 @@ const CandidateProfile: React.FC = () => {
             <Avatar
               size="large"
               className="h-[80px] w-[80px] mr-4"
-              src={"https://i.pravatar.cc/300?u=${value}abc"}
+              src={"https://i.pravatar.cc/300?u=abc"}
             />
             <div>
               <div className="flex text-lg">
